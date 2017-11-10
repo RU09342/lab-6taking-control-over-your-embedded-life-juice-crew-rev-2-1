@@ -8,7 +8,7 @@ An automotive relay was used for this section. This relay required 12V across th
 ### MOSFET Switching
 ![FET](https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-juice-crew-rev-2-1/blob/master/High%20Power%20Control/mosfet%20high%20frequency.jpg)
 
-The mosfet switch was done with an IRLB8721 N-Channel MOSFET. This FET has a V threshold of 1.8V putting it at a good range for switching with a 3.3V digital output. The mosfet was configured in a low side switch arrangement to power an 8ohm power resistor. Because the mosfet is electrically isolated there is practically no current draw out of the gpio pin of the G2553. When the frequency of the pwm signal was increased there oscilations started to become more and more prevalent on the output of the low side switch.
+The mosfet switch was done with an IRLB8721 N-Channel MOSFET. This FET has a V threshold of 1.8V putting it at a good range for switching with a 3.3V digital output. The mosfet was configured in a low side switch arrangement to power an 8ohm power resistor. Because the mosfet is electrically isolated there is practically no current draw out of the gpio pin of the G2553. When the frequency of the pwm signal was increased there oscilations started to become more and more prevalent on the output of the low side switch. ch1 waveform is the pwm output and ch2 waveform is the voltage at the drain of the mosfet.
 
 ![Relay](https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-juice-crew-rev-2-1/blob/master/High%20Power%20Control/MOSTFET.gif)
 
