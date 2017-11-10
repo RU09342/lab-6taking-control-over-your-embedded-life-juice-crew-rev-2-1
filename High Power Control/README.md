@@ -6,7 +6,7 @@
 An automotive relay was used for this section. This relay required 12V across the coil to actuate the relay. in addition to the 12 volts the coil drew 120mA. Because of this high voltage and current requirement to acctuate the coil a mosfet in a low side switch configuration was used provide power to the coil of the relay which then would close the contacts. One important addition to this circuit is a flywheel diode across the coil of the coil of the relay this prevents the voltage from skyrocketting when the coil is switched off. The frequency of the PWM signal was increased to find the limits of switching speed of the relay. After about 50Hz the frequency is high enough that the coil doesn't have enough time to fully de-energize, resulting in the relay being on all the time despite the PWM input.
 
 ### MOSFET Switching
-![Relay](https://www.phidgets.com/docs/images/1/1d/3051_1_Relay_Diagram.jpg)
+![FET](https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-juice-crew-rev-2-1/blob/master/High%20Power%20Control/mosfet%20high%20frequency.jpg)
 
 The mosfet switch was done with an IRLB8721 N-Channel MOSFET. This FET has a V threshold of 1.8V putting it at a good range for switching with a 3.3V digital output. The mosfet was configured in a low side switch arrangement to power an 8ohm power resistor. Because the mosfet is electrically isolated there is practically no current draw out of the gpio pin of the G2553. When the frequency of the pwm signal was increased there oscilations started to become more and more prevalent on the output of the low side switch.
 
