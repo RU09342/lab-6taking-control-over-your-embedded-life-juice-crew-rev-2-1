@@ -13,5 +13,5 @@ The mosfet switch was done with an IRLB8721 N-Channel MOSFET. This FET has a V t
 ![Relay](https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-juice-crew-rev-2-1/blob/master/High%20Power%20Control/MOSTFET.gif)
 
 ## Best Config for High Current
-[Relay](https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-juice-crew-rev-2-1/blob/master/High%20Power%20Control/Best%20Config.JPG)
+![Relay](https://github.com/RU09342/lab-6taking-control-over-your-embedded-life-juice-crew-rev-2-1/blob/master/High%20Power%20Control/Best%20Config.JPG)
 Using a N-MOSFET as a low side switch to energize the coil of a relay. Then the relay would be used to switch power to the load. The relay I used for this section of the lab was capable of 30 Amps. The LSS with the N-MOSFET is necessary because energizing the coil of the relay requires 120mA. This current is much greater than the 6mA a gpio pin is capable of providing
