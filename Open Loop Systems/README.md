@@ -6,6 +6,8 @@ The circuit is setup as shown in the picture.
 
 PWM with a low side switch was used to controll the fan because with a variable voltage input to the fan it took about 4 volts for the 5 volt fan to even start moving. whereas with PWM the fan would continue to spin down to 10% duty cycle
 
+The FR2311 was chosen becuase it is by far the cheapest of all the micoprocessors.
+
 Decoupling capacitors were used to stabilize the power rails and the adc output from the LM35.
 
 ## System Modeling
